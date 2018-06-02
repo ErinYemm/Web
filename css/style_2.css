@@ -1,0 +1,38 @@
+body {
+	margin: 0px;
+
+}
+
+html {
+	font-family: Arial, "Microsoft YaHei", sans-serif;
+	font-size: 18px;
+}
+
+.header {
+	float:left;
+	margin: 10px;
+    width: 15%;
+	height: 1040px;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	background-color: #21acff;
+	background-color: #21acff;
+	
+}
+
+.container {
+	float: left;
+	padding-left: 20px;
+	width: 60%;
+
+}
+
+h2 {
+	line-height: 1.5;
+	font-family: "Microsoft YaHei", sans-serif;
+}
+
+p {
+	font-family: "Microsoft YaHei", sans-serif;
+}
