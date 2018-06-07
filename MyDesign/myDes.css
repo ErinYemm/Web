@@ -66,13 +66,14 @@ html {
 	color: black;
 }
 .banner li a:focus, .banner li a:hover {
-	margin-top: -20px;
-	height: 50px;	
+	margin-top: -15px;
+	padding-top: 15px;
+	height: 30px;	
 	opacity: 1;
 	transition: .3s;
 }
 .main {
-	height: 690px;
+	height: 675px;
 	margin: 0 auto;
 } 
 .tab {
