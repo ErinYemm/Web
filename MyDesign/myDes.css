@@ -1,0 +1,158 @@
+
+html {
+	font-family: Consolas, Monospace, "Courier New", Arial, sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+.header {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: black;
+}
+.mid {
+	width: 960px;
+	box-sizing: border-box;
+	padding-left: 150px;
+	color: white;
+}
+.mid h3 {
+	float: left;
+	line-height: 3;
+}
+.mid ul {
+	margin-top: 0;
+	padding-left: 0;
+}
+.mid ul li {
+	float: right;
+	list-style-type: none;
+}
+.mid ul li a{
+	display: inline-block;
+	margin-left: 15px;
+	line-height: 2;
+	text-align: center;
+	color: white;
+}
+.mid li a:focus, .mid li a:hover {
+	color: orange;
+}
+.banner {
+	width: 100%;
+	height: 200px;
+	background-color: #66CC33;
+}
+.banner ul li{
+	float: right;
+	list-style-type: none;	
+	margin-right: 4px;
+}
+.banner li a {
+	display: table;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	top: 140px;
+	right: 100px;
+	border: 1px solid black;
+	line-height: 2;
+	text-align: center;
+	text-decoration: none;	
+	background-color: white;
+	opacity: .7;
+	color: black;
+}
+.banner li a:focus, .banner li a:hover {
+	margin-top: -20px;
+	height: 50px;	
+	opacity: 1;
+	transition: .3s;
+}
+.main {
+	height: 690px;
+	margin: 0 auto;
+} 
+.tab {
+	height: 59px;
+	border-bottom: 1px solid #ddd;
+}
+.active {
+	height: 49px;
+	background-color: #fff;
+	border-bottom: 1px solid #fff;
+} 
+.tab ul {
+	float: left;
+	margin-top: 0;
+	padding-left: 0;
+}
+.tab ul li {
+	float: left;
+	list-style-type: none;
+	width: 130px;
+}
+.tab li a {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left:200px;
+	width: 100%;
+	border: 1px solid gray;
+	border-bottom: none;
+	border-radius: 20px 20px 0 0;
+	opacity: .7;
+	text-decoration: none;
+	text-align: center;
+	line-height: 3;
+	color: black;
+	background-color: #CCC;
+}
+.tab li a:focus, .tab li a:hover {
+	background-color: white;
+}
+.tab li a.active {
+	background-color: white;
+}
+.panels {
+	width: 960px;
+	top: 0px;
+	position: relative;
+	margin-left: 180px;
+	clear: both;
+}
+article {
+	position: absolute;
+	margin: 10px;
+	text-align: center;
+	opacity: 0;
+}
+.panels .active-panel {
+	z-index: 100;
+	opacity: 1;
+}
+#no1 ul {
+	display: flex;
+	flex: 1;
+	width: 100%;
+	margin-left: 10px;
+	justify-content: space-between;
+}
+#no1 ul li{
+	display: list-item;
+	padding: 80px;
+	margin: 10px 10px 0 0;
+	border: 1px solid #CCC;
+	flex: 1;
+	list-style: none;
+	line-height: 100%;
+}
+.footer {
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	line-height: 3;
+	color: white;				
+	background-color: gray;
+}

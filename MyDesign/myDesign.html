@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>设计稿</title>
+		<link rel="stylesheet" href="myDes.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="mid">
+				<h3>Logo</h3>
+				<ul>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Register</a></li>
+					<li><a href="#">Github</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="banner">
+			<ul>
+				<li><a href="#">4</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">1</a></li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="tab">
+				<ul>
+					<li><a href="#" class="active">HOME</a></li>
+					<li><a href="#">PROFILE</a></li>
+					<li><a href="#">ABOUT</a></li>
+				</ul>
+			</div>
+			<div class="panels">
+				<article class="active-panel" id="no1">
+					<ul>
+						<li>This is content 1</li>
+						<li>Maybe content 2</li>
+						<li>content 3</li>
+					</ul>
+					<ul>
+						<li>content 4</li>
+						<li>content 5</li>
+						<li>content 6</li>
+						<li>content 7</li>
+					</ul>
+					<ul>
+						<li>content 8</li>
+						<li>content 9</li>
+						<li>content 10</li>
+					</ul>
+				</article>
+				<article>
+					<h4>Maybe content 11</h4><br/>
+					
+					<p>This tab hasn't got any Lorem Ipsum in it. But the content isn't very exciting all the same.</p>
+				</article>
+				<article>
+					<h4>content 12</h4>
+					
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque turpis nibh, porttitor nec venenatis eu, pulvinar in augue. And now an ordered list: how exciting!</p>
+				</article>
+			</div>
+		</div>
+		<div class="footer">© 2018 ife.baidu.com</div>
+		<script>
+			var tabs = document.querySelectorAll('.tab li a');
+			var panels = document.querySelectorAll('.panels article');
+			
+			for(i = 0; i < tabs.length; i++) {
+				var tab = tabs[i];
+				setTabHandler(tab, i);
+			}
+			
+			function setTabHandler(tab,tabPos) {
+				tab.onclick = function() {
+					for(i = 0; i <tabs.length; i++) {
+						tabs[i].className = '';
+					}
+					tab.className = 'active';
+					
+					for(i = 0; i < panels.length; i++) {
+						panels[i].className = '';
+					}
+					panels[tabPos].className = 'active-panel';
+				}
+			
+			}
+		</script>
+		
+	</body>
+</html>
