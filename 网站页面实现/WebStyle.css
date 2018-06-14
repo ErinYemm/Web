@@ -1,0 +1,62 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+div {
+	box-sizing: border-box;
+}
+.header {
+	width: 1600px;
+	height: 998px;
+	background-color: #000;
+}
+.account {
+	opacity: .4;
+	z-index: 1;
+	background: url("images/Text.png");
+	border: 1px solid black;
+}
+.hello {
+	
+	left: 640px; 
+	top: 210px; 
+
+	z-index: -10; 
+}
+.top {
+	width: 1600px;
+	height: 712px;
+}
+.middle {
+	width: 1600px;
+	height: 800px;
+	background-color: orange;
+}
+.products {
+	width: 100%;
+	height: 100%;
+	background-color: lightblue; 
+}
+.products .top {
+	width: 100%;
+	height: 580px;
+}
+.products .bottom {
+	width: 100%;
+	height: 1002px;
+}
+.crew {
+	width: 1600px;
+	height: 1090px;
+	background-color: Bisque;
+}
+.contacts {
+	width: 1600px;
+	height: 700px;
+	background-color: deeppink;
+}
+.footer {
+	width: 1600px;
+	height: 412px;
+	background-color: gray;
+}
